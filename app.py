@@ -11,7 +11,12 @@ st.set_page_config(
 learn = load_learner('model-2.pkl')
 
 def main():
-    st.title('Upload an image')
+    st.title('Face mask detection')
+    st.write('Project by:')
+    st.write("CSE - I - 46")
+    st.write("Malika Singh")
+    st.write("Yogya Pankaj Mendiratta")
+    st.write("Apoorv Minocha")
     image_file = st.file_uploader('Upload a image file', ['png','jpg','jpeg'], accept_multiple_files=False)
     if image_file is not None:
         file_details = {"FileName":image_file.name,"FileType":image_file.type}
